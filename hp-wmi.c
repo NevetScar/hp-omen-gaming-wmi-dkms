@@ -1461,6 +1461,7 @@ inline int omen_thermal_profile_ec_timer_set(u8 value)
 }
 
 static int victus_s_gpu_thermal_profile_set(bool ctgp_enable, bool ppab_enable, u8 dstate);
+static int victus_s_set_cpu_pl1_pl2(u8 pl1, u8 pl2);
 
 static int platform_profile_omen_set_ec(enum platform_profile_option profile)
 {
