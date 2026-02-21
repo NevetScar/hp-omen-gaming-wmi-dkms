@@ -1791,7 +1791,7 @@ static int victus_s_set_cpu_pl1_pl2(u8 pl1, u8 pl2)
 	power_limits.pl1 = pl1;
 	power_limits.pl2 = pl2;
 	power_limits.pl4 = HP_POWER_LIMIT_NO_CHANGE;
-	power_limits.cpu_gpu_concurrent_limit = HP_POWER_LIMIT_DEFAULT;
+	power_limits.cpu_gpu_concurrent_limit = HP_POWER_LIMIT_NO_CHANGE;
 
 	ret = hp_wmi_perform_query(HPWMI_SET_POWER_LIMITS_QUERY, HPWMI_GM,
 				   &power_limits, sizeof(power_limits), 0);
